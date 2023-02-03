@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+#roadmap .text-before .circle:before {
+  content: "";
+  position: absolute;
+  height: 4.5rem;
+  width: 4px;
+  background-color: #0587ff;
+  top: -4.5rem;
+}
+#roadmap .text-before .circle-text:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #0587ff;
+  bottom: -10px;
+  left: 0%;
+}
+
+#roadmap .text-after .circle:before {
+  content: "";
+  position: absolute;
+  height: 4.5rem;
+  width: 4px;
+  background-color: #23efe0;
+  bottom: -4.5rem;
+}
+#roadmap .text-after .circle-text:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #23efe0;
+  top: -10px;
+  left: 0;
+}
+@media (max-width: 1024px) {
+  #roadmap .text-after .circle:before {
+    content: "";
+    position: absolute;
+    height: 4.5rem;
+    width: 4px;
+    background-color: #0587ff;
+    top: -4.5rem;
+  }
+  #roadmap .text-after .circle-text:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #0587ff;
+    bottom: -10px;
+    top: unset;
+    left: 0%;
+  }
+}
